@@ -1,0 +1,513 @@
+/* reset css */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    font-family: Verdana,sans-serif;
+    scroll-behavior: smooth;
+}
+#main{
+ position: relative;
+}
+#header{
+    height: 46px;
+    background-color: #000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+#nav, .subnav{
+    list-style-type: none;
+}
+#nav li{
+    display: inline-block;
+    position: relative;
+}
+#nav > li > a{
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 15px;
+}
+#nav li a{
+    text-decoration: none;
+    line-height: 46.5px;
+    padding: 0  24px;
+    display:inline-block;
+}
+.subnav li:hover a,
+#nav > li:hover > a,
+#tour .ticket .buy button:hover,
+#contract #box .messenger button:hover{
+    color: #000;
+    background-color: #ccc;
+}
+#nav li:hover .subnav{
+    display: block;
+    
+}
+#nav .subnav{
+    display: none;
+    min-width: 160px;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+#nav .subnav li{
+    display: block;
+}
+#nav .subnav a{
+    color: #000;
+    padding:0 12px;
+    line-height: 38px;
+}
+#nav{
+    float: left;
+}
+.search{
+    display: block;
+    width: 66px;
+    height: 46px;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    cursor: pointer;
+}
+.search i{
+    line-height: 46px;
+    position: absolute;
+    width: 66px;
+    position: absolute;
+    left: 0;
+    color: white;
+}
+.search i:hover{
+    background-color: #f44336;
+}
+#slider{
+    width: 100%;
+    position: relative;
+    margin-top: 46px;
+}
+
+#slider img{
+    width: 100%;
+    display: block;
+    
+}
+#slider .text{
+    position: absolute;
+    color: white;
+    bottom: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+#slider .text h3{
+    line-height: 80px;
+    text-align: center;
+}
+#content .noidung{
+    position: relative;
+    width: 800px;
+    max-width: 100%;
+    
+    margin: 0 auto;
+    padding: 64px 16px;
+}
+#content .noidung h2, h2 + p{
+    text-align: center;
+}
+#content .noidung h2{
+    margin: 10px;
+    text-transform: uppercase;
+}
+#content .noidung h2+p{
+    margin: 15px ;
+    color: #757575;
+}
+#content .noidung{
+    text-align: justify;
+}
+#content .anh{
+    padding: 32px 0;
+}
+#content .anh div{
+    float: left;
+    text-align: center;
+    width: 33.333%;
+}
+#content .anh div p{
+    margin: 15px 0;
+}
+#content .anh div img{
+    width: 60%;
+    margin-bottom: 16px;
+    border-radius: 5px;
+}
+#tour{
+    position: relative;
+    width: 100%;
+ 
+    background-color: #000;
+    color: #fff;
+}
+#tour::after{
+    clear: both;
+}
+#tour .noidung{
+    width: 800px;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 64px 16px;
+    text-align: center;
+}
+#tour .noidung{
+    clear: both;
+}
+#tour .noidung h2{
+    margin: 10px 0; 
+    letter-spacing: 4px; 
+    font-weight: 400;
+    text-transform: uppercase;
+}
+#tour .noidung h2+p{
+    color: #757575;
+}
+#tour .noidung ul{
+    list-style-type: none;
+    background-color: white;
+}
+#tour .noidung ul li{
+    border: solid 0.1px #757575;
+    padding: 8px 16px;
+    text-align: left;
+    line-height: 1.5;
+    color: #757575;
+}
+#tour .noidung ul .box{
+    margin-left: 16px;
+    padding: 0 8px;
+    background-color: #f44336;
+    display: inline-block;
+    color: #fff;
+}
+#tour .noidung ul .box3{
+    float: right;
+    margin-right: 16px;
+    border-radius: 50%;
+    background-color: #000;
+    color: #fff;
+    display: inline-block;
+    padding: 0 8px;
+    text-align: center;
+}
+#tour .noidung .ticket{
+    padding: 32px 8px;
+    margin: 0 -16px;
+    display: flex;
+}
+#tour .noidung .ticket .buy{
+    width: calc(33.333% - 16px);
+    margin:0 8px;
+    text-align: left;
+    color: #000;
+    background-color: #fff;   
+}
+#tour .ticket .buy img{
+    width: 100%;
+    margin-bottom: 15px;
+}
+#tour .ticket .buy img:hover{
+    opacity: 0.5;
+}
+#tour .ticket .buy p{
+    padding: 0 16px;
+    margin-bottom: 15px;
+
+}
+#tour .ticket .buy p.time{
+    color: #757575;
+}
+#tour .ticket .buy button{
+    margin-left: 16px;
+    background-color: #000;
+    color: #fff;
+    width: 110px;
+    height: 40px;
+    padding: 8px 16px;
+    margin-bottom: 16px;
+    border: 0;
+    cursor: pointer;
+}
+#contract{
+    width: 800px;
+    max-width: 100%;
+    margin: 0 auto; 
+    padding: 64px 16px;
+    text-align: center;
+}
+#contract > h2{
+    margin: 10px 0;
+}
+#contract > p{
+    margin: 0 15px;
+}
+#box{
+    padding: 32px 0;
+    width: 100%;
+    display: flex;
+   
+}
+#contract #box .adress{
+    width: 50%;
+    margin-bottom: 16px;
+    text-align: left;
+}
+#contract #box .adress p{
+    padding: 5px 0;  
+}
+#contract #box .adress p i{
+    margin-right: 8px;
+}
+#contract > p > i{
+    color: #757575;
+}
+#contract #box .messenger{
+    width: 50%;
+    height: 100%;
+    
+}
+#contract #box .messenger input{
+    padding: 10px;
+}
+#contract #box .messenger .b1{
+    float: left;
+}
+#contract #box .messenger .b2{
+    float: right;
+}
+#contract #box .messenger .b3{
+    width: 100%;
+    margin-top: 16px;
+}
+#contract #box .messenger button{
+    padding: 10px 15px;
+    float: right;
+    margin-top: 15px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+#map{
+    position: relative;
+    width: 100%;
+    
+}
+#map img{
+    width: 100%;
+    position: relative;
+    display: block;
+}
+#footer{
+    position: relative;
+    padding: 64px 16px;
+    text-align: center;
+    color: #757575;
+}
+#footer i{
+    font-size: 30px;
+    color: #757575;
+}
+#footer i:hover{
+    opacity: 0.5;
+}
+#footer p{
+    margin: 15px 0;
+}
+#footer p a{
+    color: #757575;
+}
+
+
+.modal{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0,0,0,0.3);
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+.modal.open{
+    display: flex;
+}
+.modal .modal-close{
+    position: absolute;
+    font-size: 24px;
+    width: 46px;
+    height: 52px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    right: 0;
+    color: #fff;
+}
+.modal .modal-close:hover,
+.modal-body #buy-ticket:hover{
+    color: #000;
+    background-color: #ccc;
+}
+.modal .modal-container{
+    width: 900px;
+    min-height: 400px;
+    background-color: #fff;
+    position: relative;
+    animation: faceIn ease 0.5s;
+}
+.modal-header {
+    background-color: #009688;
+    height: 138px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    color: #fff;
+    
+}
+.modal-header i{
+    margin-right: 10px;
+}
+.modal-body,
+.modal-footer{
+    padding: 0.15px 16px;
+}
+.modal-body .modal-label{
+    display: block;
+    font-size: 15px;
+    margin: 15px 0;
+}
+.modal-body .modal-input{
+    padding: 8px;
+    width: 100%;
+}
+.modal-body #buy-ticket{
+    width: 100%;
+    margin: 16px 0;
+    padding: 16px;
+    font-size: 15px;
+    color: #fff;
+    background-color: #009688;
+    border: none;
+    cursor: pointer;
+}
+.modal-footer{
+    float: right;
+    margin: 15px 0 31px;
+}
+.modal-footer a{
+    color: blue;
+}
+@keyframes faceIn{
+    from{
+        transform: translateY(-200px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+.menuBt{
+    display: none;
+}
+
+
+/* tablet */
+@media(max-width:1023px) and (min-width:740px){
+    
+}
+
+/* mobile */
+@media(max-width:739px){
+    .search,
+    #slider .text h3{
+        display: none;
+    }
+
+    #slider .text p{
+        display: none;
+    }
+    #content .anh div{
+        text-align: center;
+        float: none;
+        width: 100%;
+    }
+    #tour .noidung .ticket{
+        flex-direction: column;
+    }
+    #tour .noidung .ticket .buy{
+        width: calc(100% - 16px);
+        margin-bottom: 16px;
+    }
+    #box{
+        flex-direction: column;
+    }
+    #contract #box .adress{
+        width: 100%;
+    }
+    #contract #box .messenger{
+        width: 100%;
+    }
+    #contract #box .messenger form{
+        display: flex;
+        flex-direction: column;
+    }
+    #contract #box .messenger .b3{
+        margin-top: 0;
+    }
+    #contract #box .messenger button{
+        width: 80px;
+        align-self: flex-end;
+    }
+    .modal .modal-container{
+        margin: 0 8px;
+    }
+
+    .menuBt{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 46px;
+        height: 46px;
+        position: absolute;
+        right: 0;
+        top: 0;
+        text-align: center;
+        cursor: pointer;
+        background-color: #000;
+    }
+    .menuBt i{
+        line-height: 46px;
+        position: absolute;
+        color: white;   
+    }
+    .menuBt:hover{
+        background-color: #ccc;
+    }
+    .menuBt:hover i{
+        color: #000;
+    }
+    #nav li{
+        display: block;
+    }
+    #header{
+        overflow: hidden;
+    }
